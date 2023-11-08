@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import LeftSection from './component/Leftsection';
+import PopupForm from './component/Popup';
+import RightSection from './component/RightSection';
 
 function App() {
+  const [showForm, setShowForm] = useState(false);
+  const [selectedGroup, setSelectedGroup] = useState(null);
+  const [showRightSection, setShowRightSection] = useState(false);
+
+  const toggleForm = () => {
+    setShowForm(!showForm);
+  };
+
+  const handleGroupSelection = (group) => {
+    setSelectedGroup(group);
+    setShowRightSection(true); 
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: 'flex' }}>
+      <LeftSection
+        toggleForm={toggleForm}
+        handleGroupSelection={handleGroupSelection}
+        showRightSection={showRightSection}
+      />
+      <RightSection
+        selectedGroup={selectedGroup}
+        showRightSection={showRightSection}
+        setShowRightSection={setShowRightSection}
+      />
+      {showForm && <PopupForm toggleForm={toggleForm} />}
     </div>
   );
 }

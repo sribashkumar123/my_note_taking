@@ -1,0 +1,191 @@
+.right-section {
+  background-color: #E8E8E8;
+  width: 70%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative; 
+}
+.back-btn
+{
+  display: none;
+}
+.group-section
+{
+  margin-left: 2em;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+.header {
+  height: 4em;
+  background: #E8E8E8;
+  display: flex;
+  align-items: center;
+  color: #000; 
+}
+.date-time
+{
+  width: 20%;
+  align-items: center;
+  gap: 5px;
+  
+}
+.message-text
+{
+  width: 85%;
+ 
+}
+.chat-message {
+  background: #F7ECDC;
+  padding: 10px;
+  border-radius: 5px;
+ height: 120px;
+  width: 95%;
+}
+
+.input-area {
+  position: absolute;
+  bottom: 0;
+  width: 92%;
+ 
+  background: white;
+  /* margin-left: 30px;  */
+  height: 120px; 
+  border-radius: 10px;
+}
+
+.input-with-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  
+}
+
+.input-with-button input {
+  flex: 1;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 20px;
+  height: 100px;
+  
+}
+
+.enter-button {
+  
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  bottom: 5px;
+  right: 5px;
+  height: 30px;
+  width: 50px;
+}
+
+.enter-button:hover {
+  background: #0056b3;
+}
+
+.chat-message {
+  display: flex;
+  flex-direction: row;
+}
+
+.date-time {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.group-l {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+
+.group-s {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.group-n {
+  margin-left: 0.8em; 
+  color: black;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 1px; 
+}
+.message-list{
+  height: 70vh;
+  overflow-y: auto; 
+ 
+}
+
+
+
+
+@media (max-width: 768px) {
+  .right-section {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .message-list {
+    max-height: 50vh; 
+  }
+
+  .input-area {
+    position: absolute;
+    width: 200%;
+    background-color: #0056b3;
+  }
+
+  .input-with-button {
+    display: flex;
+    align-items: center;
+    background:#0056b3;
+    
+  }
+
+  .input-with-button input {
+    width: 70%; 
+    padding: 8px;
+    background-color: #0056b3;
+  }
+
+  .enter-button {
+    width: 30px; 
+    height: 30px; 
+    padding: 0;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .right-section
+  {
+    display: none;
+  }
+  
+}
+

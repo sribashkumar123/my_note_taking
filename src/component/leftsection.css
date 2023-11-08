@@ -1,0 +1,95 @@
+
+.left-section
+{
+    width: 30%;
+    height: 100vh;
+}
+.create-note
+{
+    background: black;
+    color: white;
+    width: 250px;
+    height: 35px;
+    top: 225px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.li-item
+{
+    padding: .5em;
+    margin-top: 10px;
+    list-style-type: none;  
+    font-weight: bold;  
+    font-size: 20px;  
+   
+}
+.group-logo
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+}
+.group-section
+{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+.group-name
+{
+    margin-left: .8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.left-section {
+    width: 30%;
+    height: 100vh;
+    transition: all 0.3s ease; }
+  
+  .hide {
+    display: none;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .right-section {
+      display: none; 
+      
+    }
+  
+    .left-section {
+      width: 100%; 
+    }
+  
+    
+    .right-section.show {
+      display: block;
+      width: 70%; 
+    }
+  
+    .left-section.hide {
+      display: none; 
+    }
+  }
+  

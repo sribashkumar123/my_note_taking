@@ -1,0 +1,38 @@
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  
+  .radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .radio-item input {
+    display: none;
+  }
+  
+  .radio-custom {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #fff;
+    margin-right: 10px;
+  }
+  
+  .red { background-color: red; }
+  .blue { background-color: blue; }
+  .green { background-color: green; }
+  .yellow { background-color: yellow; }
+  .purple { background-color: purple; }
+  .orange { background-color: orange; }
+  
+  
+  .radio-item input:checked + .radio-custom {
+    border: 2px solid #000;
+  }
+  
