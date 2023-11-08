@@ -1,5 +1,5 @@
 {
-  "home":"http://sribashkumar123.gitub.io/my_note_taking/public/index.html",
+  "home": "https://sribashkumar123.gitub.io/my_note_taking/public/index.html",
   "name": "note_taking",
   "version": "0.1.0",
   "private": true,
@@ -37,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
